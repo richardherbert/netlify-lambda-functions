@@ -1,5 +1,5 @@
 # https://youtu.be/_1qXQM3Mt4Q
 
 [build]
-  command = "build jekyll"
-  publish = "_site/"
+  command = "jekyll build"
+  publish = "_site"
