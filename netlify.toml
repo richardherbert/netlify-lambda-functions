@@ -1,5 +1,5 @@
 # https://youtu.be/_1qXQM3Mt4Q
 
 [build]
-  command = "jekyll build"
+  command = "npm run prod"
   publish = "_site"
