@@ -1,9 +1,12 @@
 {
   "name": "netlify-lambda-functions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prod": "npm run build:jekyll; npm run build:lambda;",
+    "build:jekyll": "jekyll build",
+    "build:lambda": "netlify-lambda build functions",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
