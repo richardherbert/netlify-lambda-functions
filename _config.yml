@@ -1,2 +1,5 @@
 title: Netlify Lambda Functions
 baseurl: ''
+
+exclude:
+  - src
