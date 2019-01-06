@@ -2,5 +2,5 @@
 
 [build]
   command = "npm run prod"
-  publish = "_site"
+  publish = "_site/"
   functions = "functions"
