@@ -3,4 +3,3 @@
 [build]
   command = "npm run prod"
   publish = "_site/"
-  functions = "any-string"
