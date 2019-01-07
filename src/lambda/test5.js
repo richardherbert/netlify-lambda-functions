@@ -2,7 +2,7 @@ const axios = require( 'axios' );
 const API_ENDPOINT = 'https://jsonplaceholder.typicode.com/todos/1';
 
 exports.handler = ( event, context, callback ) => {
-	axios.get( 'https://jsonplaceholder.typicode.com/todos/1' )
+	axios.get( API_ENDPOINT )
 		.then( ( response ) => {
 			callback( null, {
 				statusCode: 200,
