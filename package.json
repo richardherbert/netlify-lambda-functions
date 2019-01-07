@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prod": "npm run build:jekyll; npm run build:lambda;",
+    "build": "npm run build:jekyll; npm run build:lambda;",
     "build:jekyll": "jekyll build",
     "build:lambda": "netlify-lambda build src/lambda",
     "test": "echo \"Error: no test specified\" && exit 1"
