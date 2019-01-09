@@ -2,7 +2,7 @@ const axios = require( 'axios' );
 const API_ENDPOINT = 'https://jsonplaceholder.typicode.com/todos/1';
 
 exports.handler = ( event, context, callback ) => {
-	axios.get( {
+	axios( {
 			method: 'get'
 			,url: 'https://jsonplaceholder.typicode.com/todos/1'
 			,responseType: 'json'
