@@ -13,8 +13,8 @@ exports.handler = ( event, context, callback ) => {
 
 			callback( null, {
 				statusCode: 200,
-				// body: JSON.stringify( response.body )
-				body: response.data
+				body: JSON.stringify( response.data )
+				// body: response.data
 			} );
 		} )
 		.catch( ( error ) => {
