@@ -9,12 +9,12 @@ exports.handler = ( event, context, callback ) => {
 		}
 	)
 		.then( ( response ) => {
-			// const payload = JSON.parse( event.body );
+			console.log(response.data);
 
 			callback( null, {
 				statusCode: 200,
 				// body: JSON.stringify( response.body )
-				body: response
+				body: response.data
 			} );
 		} )
 		.catch( ( error ) => {
