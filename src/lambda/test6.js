@@ -4,11 +4,11 @@ const API_ENDPOINT = 'https://jsonplaceholder.typicode.com/todos/1';
 exports.handler = ( event, context, callback ) => {
 	axios.get( API_ENDPOINT )
 		.then( ( response ) => {
-			const payload = JSON.parse( event.body );
+			// const payload = JSON.parse( event.body );
 
 			callback( null, {
 				statusCode: 200,
-				body: payload
+				body: JSON.stringify( response.body )
 			} );
 		} )
 		.catch( ( error ) => {
