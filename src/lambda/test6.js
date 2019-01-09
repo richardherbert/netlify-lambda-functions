@@ -4,7 +4,7 @@ const API_ENDPOINT = 'https://jsonplaceholder.typicode.com/todos/1';
 exports.handler = ( event, context, callback ) => {
 	axios.get( {
 			method: 'get'
-			,url: API_ENDPOINT
+			,url: 'https://jsonplaceholder.typicode.com/todos/1'
 			,responseType: 'json'
 		}
 	)
