@@ -1,12 +1,12 @@
 {
   "name": "netlify-lambda-functions",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npm run build:jekyll; npm run build:lambda;",
     "build:jekyll": "jekyll build",
-    "build:lambda": "netlify-lambda build src/lambda"
+    "build:lambda": "netlify-lambda build src/lambda/"
   },
   "keywords": [],
   "author": "",
