@@ -10,6 +10,13 @@
 
 <body>
 	<h1>{{ site.title }}</h1>
-	<h2>{{ site.time }}</h2>
+
+	{%- assign functions = 'test1,test2,test3,test4,test5,test6' | split: ',' -%}
+
+	<ul>
+		{%- for function in functions -%}
+			<li><a href="/.netlify/functions/{{ function }}">{{ function }}</a></li>
+		{%- endfor -%}
+	</ul>
 </body>
 </html>
