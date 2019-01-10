@@ -1,7 +1,4 @@
-# https://scotch.io/tutorials/build-and-deploy-a-serverless-function-to-netlify
-# https://youtu.be/_1qXQM3Mt4Q
-
 [build]
-  command = "npm run build"
-  publish = "_site/"
-  functions = "it-seems-like-this-can-be-anything"
+  command = "npm run build" # the build command to run when deployed
+  publish = "_site/" # the directory to publish the generated Jekyll site into
+  functions = "it-seems-like-this-can-be-anything" # the directory where the functions are published to when developing locally
